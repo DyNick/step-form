@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step by step form</title>
+    <link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <script src="build/js/main.js"></script>
+</head>
+<body>
+<div class="main">
+    <form method="get" class="form">
+        <div class="steps">
+            <span class="step-number first">1</span>
+            <span class="step-number second">2</span>
+            <span class="step-number third">3</span>
+            <span class="step-number fourth">4</span>
+        </div>
+        <div class="step step_first">
+
+            <p class="step-head">1.Введите имя и e-mail</p>
+            <input class="input input_name" type="text" name="name" placeholder="Имя">
+
+            <input class="input input_mail" type="text" name="mail" id="email" placeholder="Введите e-mail">
+            <span id="valid"></span>
+
+            <span class="button button_first-step">
+                <i class="fa fa-angle-left arrow" aria-hidden="true"></i>
+                <span class="button_back-text">Предыдуший</span>
+            </span>
+
+        </div>
+
+        <div class="step step_second">
+            <p class="step-head">2.Выберите страну и город</p>
+
+            <select class="select select_country country">
+                <option disabled>Выберите город</option>
+            </select>
+            <select class="select select_cities cities">
+                <option disabled>Выберите страну</option>
+            </select>
+
+        </div>
+
+        <div class="step step_third">
+
+            <p class="step-head">3.Отметьте социальные сети</p>
+
+            <div class="social social_fb">
+                <span class="check">
+                    <label for="fb">Facebook</label>
+                    <input type="checkbox" id="fb">
+                </span>
+                <input class="social-input social-input_fb" type="text" name="country"
+                       placeholder="Ваша страница в Facebook">
+            </div>
+            <div class="social social_vk">
+                <span class="check">
+                    <label for="vk">Bконтакте</label>
+                    <input type="checkbox" id="vk">
+                </span>
+                <input class="social-input social-input_vk" type="text" name="country"
+                       placeholder="Ваша страница в Bконтакте">
+            </div>
+            <div class="social social_tw">
+                <span class="check">
+                    <label for="tw">Twitter</label>
+                    <input type="checkbox" id="tw">
+                </span>
+                <input class="social-input social-input_tw" type="text" name="country"
+                       placeholder="Ваша страница в Twitter">
+            </div>
+            <div class="social social_ok">
+                <span class="check">
+                    <label for="ok">Однокласники</label>
+                    <input type="checkbox" id="ok">
+                </span>
+                <input type="text" class="social-input social-input_ok" name="country"
+                       placeholder="Ваша страница в Однокласники">
+            </div>
+
+        </div>
+        <div class="step step_fourth">
+            <p class="step-head">Выберите любимого котика</p>
+            <div class="animal-block">
+                <span class="animals cat"><img src="src/img/cat1.jpg" alt=""></span>
+                <span class="animals cat"><img src="src/img/cat2.jpg" alt=""></span>
+                <span class="animals cat"><img src="src/img/cat3.jpg" alt=""></span>
+                <span class="animals dog"><img src="src/img/dog4.jpg" alt=""></span>
+            </div>
+        </div>
+        <a href="#" class="button button_back back">
+            <i class="fa fa-angle-left arrow" aria-hidden="true"></i>
+            <span class="button_back-text">Предыдуший</span>
+        </a>
+
+        <a href="#" class="button button_next next">
+            <span class="button_next-text">Следующий</span>
+            <i class="fa fa-angle-right arrow" aria-hidden="true"></i>
+        </a>
+
+        <input class="button button_submit" type="submit" value="Завершить">
+
+
+    </form>
+</div>
+</body>
+</html>
